@@ -21,6 +21,7 @@ body{
     flex: 1;
     border-radius: 1rem;
     overflow: auto;
+    padding: 0 1.5rem 0 1.5rem;
 }
 .music-player{
     background-color: black;
@@ -123,6 +124,7 @@ a{
     justify-content: space-between;
     align-items: center;
     padding: 1rem 0 1rem 0;
+    z-index: 10; /*Refer z-index mdn for more detail */
 }
 .sticky-nav-icons{
     margin-left: 0.75rem;
@@ -140,4 +142,42 @@ a{
     .hide{
         display: none;
     }
+}
+
+.card{
+    background-color: #232323;
+    width: 150px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+    
+}
+.cards-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card img{
+    width: 100%;
+    border-radius: 0.5rem;
+}
+.card-title{
+    font-weight: 700;
+}
+.card-info{
+    font-size: 0.75rem;
+    opacity: 0.5;
+}
+
+.footer{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.line{
+    height: 30%;
+    width: 90%;
+    border-top: 1px solid white;
+    opacity: 0.5;
 }
